@@ -1,0 +1,531 @@
+html, html a {
+	-webkit-font-smoothing: antialiased!important;
+	-webkit-text-size-adjust: none
+}
+body {
+	margin: 0;
+	font: 300 15px/25px ronnia, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #333
+}
+a {
+	color: #000;
+	text-decoration: none
+}
+header {
+	background: url(../img/watercolour-bg.jpg) no-repeat 0 #fff;
+	background-size: cover;
+	display: block;
+	height: 740px;
+	position: relative
+}
+.logo {
+	width: 200px;
+	height: 123px;
+	margin-bottom: 80px;
+	background: url(../img/dark/logo-sig@2x.png) no-repeat 0 100%;
+	background-size: 200px 123px;
+	overflow: hidden;
+	text-indent: 100%;
+	position: absolute;
+	margin-left: 40px;
+	top: 18%
+}
+ul {
+	font: 700 12px brandon-grotesque, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	list-style: none;
+	text-align: left;
+	position: absolute;
+	padding-left: 25px;
+	bottom: 11%;
+	letter-spacing: 1px
+}
+li {
+	margin: 0;
+	padding: 0;
+	display: inline
+}
+li a {
+	display: inline-block;
+	padding: 10px 0 10px 25px;
+	margin: 0 20px;
+	-webkit-transition: opacity .2s ease-in-out
+}
+li a:focus, li a:hover {
+	opacity: .6
+}
+li.dribbble a {
+	background: url(../img/dark/dribbble@2x.png) no-repeat 0 50%;
+	background-size: 19px 18px
+}
+li.twitter a {
+	background: url(../img/dark/twitter@2x.png) no-repeat 0 50%;
+	background-size: 19px 18px
+}
+li.medium a {
+	background: url(../img/dark/medium@2x.png) no-repeat 0 50%;
+	background-size: 19px 18px
+}
+li.rdio a {
+	background: url(../img/rdio.png) no-repeat 0 50%
+}
+li.email a {
+	background: url(../img/dark/mail@2x.png) no-repeat 0 50%;
+	background-size: 19px 18px
+}
+li.skype a {
+	background: url(../img/skype.png) no-repeat 0 50%
+}
+h1 {
+	color: #000;
+	font: 900 60px/70px ronnia, sans-serif;
+	text-align: left;
+	max-width: 12em;
+	position: absolute;
+	padding-left: 40px;
+	top: 34%;
+	padding-right: 30px
+}
+h2 {
+	color: #000;
+	font: 700 14px/20px brandon-grotesque, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 2px;
+	padding-top: 30px;
+	padding-left: 40px
+}
+.top {
+	padding-bottom: 50px;
+	border-top: 5px solid #f2f2f2
+}
+h3 {
+	font: 900 26px ronnia, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #000;
+	height: 50px;
+	margin: 0
+}
+.intro {
+	color: #000;
+	max-width: 36em;
+	text-align: left;
+	font-size: 22px;
+	line-height: 32px;
+	position: absolute;
+	padding-left: 40px;
+	bottom: 22%;
+	font-family: ronnia, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+.intro a {
+	font-family: ronnia, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+.text {
+	width: 350px;
+	padding-top: 50px;
+	padding-left: 10px
+}
+.text p a {
+	color: #000;
+	border-bottom: 1px dotted #999
+}
+.text p a:hover {
+	color: #0C69F3;
+	border-bottom: 1px dotted #0C69F3
+}
+.btn {
+	padding: 12px 23px;
+	border-radius: 30px;
+	display: block;
+	text-align: left;
+	color: #0C69F3;
+	font: 700 14px brandon-grotesque, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	float: left;
+	border: 2px solid #0C69F3
+}
+.btn:focus, .btn:hover {
+	background-color: #0C69F3;
+	color: #fff
+}
+.follow {
+	margin: auto;
+	text-align: center;
+	padding-bottom: 50px
+}
+.tweet {
+	text-align: center;
+	font-family: proxima_nova_rgregular, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	padding-bottom: 30px
+}
+.tweet a {
+	color: #4d4c4c;
+	font-family: proxima_nova_rgbold, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	-webkit-transition: opacity .2s ease-in-out
+}
+.tweet a:hover, a:focus {
+	opacity: .8
+}
+footer {
+	font: 700 12px/100px brandon-grotesque, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	height: 100px;
+	background-color: #0c69f3;
+	color: #fff
+}
+.folio.player {
+	padding: 30px;
+	background: url(../img/player.png) no-repeat 500px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.altitude {
+	padding: 30px;
+	background: url(../img/altitude.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.snowfire {
+	padding: 30px;
+	background: url(../img/snowfire.png) no-repeat 500px 50px;
+	height: 850px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.awesomecart {
+	padding: 30px;
+	background: url(../img/awesomecart.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.instate {
+	padding: 30px;
+	background: url(../img/instate.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.zain {
+	padding: 30px;
+	background: url(../img/zain.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.firstround {
+	padding: 30px;
+	background: url(../img/firstround.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.oozled {
+	padding: 30px;
+	background: url(../img/oozled.jpg) no-repeat 400px 50px;
+	height: 860px
+}
+.folio.tribal {
+	padding: 30px;
+	background: url(../img/tribal.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.think {
+	padding: 30px;
+	background: url(../img/think.png) no-repeat 400px 50px, url(../img/brick-wall.jpg);
+	border-top: 5px solid #f2f2f2
+}
+.folio.letswatchit {
+	padding: 30px;
+	background: url(../img/letswatchit.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.snow2moro {
+	padding: 30px;
+	background: url(../img/snow2moro.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.ooomf {
+	padding: 30px;
+	background: url(../img/ooomf.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.wavehouse {
+	padding: 30px;
+	background: url(../img/wavehouse.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.bookcreator {
+	padding: 30px;
+	background: url(../img/book-creator.jpg) no-repeat 400px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.email {
+	padding: 30px;
+	background: url(../img/email-app.png) no-repeat 500px 50px;
+	height: 900px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.pinterest {
+	padding: 30px;
+	background: url(../img/pinterest.jpg) no-repeat 500px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.tyle {
+	padding: 30px;
+	background: url(../img/tyle.jpg) no-repeat 500px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.mode {
+	padding: 30px;
+	background: url(../img/mode.jpg) no-repeat 500px 50px;
+	height: 860px;
+	border-top: 5px solid #f2f2f2
+}
+.folio.variousui {
+	padding: 30px;
+	background: url(../img/variousui.png) no-repeat 500px 50px;
+	height: 710px;
+	border-top: 5px solid #f2f2f2
+}
+@media screen and (max-width:900px) {
+.text {
+	width: 100%;
+	padding-top: 0;
+	padding-left: 0
+}
+.intro {
+	max-width: 80%
+}
+.folio.altitude, .folio.player {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	height: auto;
+	background-size: contain;
+	background-position: bottom
+}
+.folio.snowfire {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	background-size: contain;
+	background-position: bottom;
+	height: 400px
+}
+.folio.awesomecart, .folio.tribal {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	height: auto;
+	background-size: contain;
+	background-position: bottom
+}
+.folio.think {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	height: 450px;
+	background: url(../img/think.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 80%
+}
+.folio.bookcreator, .folio.email, .folio.firstround, .folio.instate, .folio.letswatchit, .folio.ooomf, .folio.oozled, .folio.snow2moro, .folio.wavehouse, .folio.zain {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	height: auto;
+	background-size: contain;
+	background-position: bottom
+}
+.folio.pinterest {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	background-size: contain;
+	background-position: bottom;
+	height: 420px
+}
+.folio.mode, .folio.tyle {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	background-size: contain;
+	background-position: bottom;
+	height: 450px
+}
+.folio.variousui {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	background-size: contain;
+	background-position: bottom;
+	height: 350px
+}
+}
+@media screen and (max-width:660px) {
+.logo {
+	margin-bottom: 50px;
+	top: 10%
+}
+.intro {
+	bottom: 20%;
+	font-size: 20px
+}
+h1 {
+	font: 900 45px/55px ronnia, sans-serif;
+	text-align: left
+}
+.folio.think {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	height: 400px;
+	background: url(../img/think.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 80%
+}
+}
+@media screen and (max-width:568px) {
+body {
+	border: 0 solid #fff
+}
+.text {
+	padding-left: 0
+}
+ul {
+	bottom: 3%;
+	max-width: 90%
+}
+h1 {
+	font: 900 35px/45px ronnia, sans-serif;
+	top: 30%
+}
+header {
+	height: 550px
+}
+.folio.variousui {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	background-size: contain;
+	background-position: bottom;
+	height: 300px
+}
+}
+@media screen and (max-width:440px) {
+h1 {
+	font: 900 28px/32px ronnia, sans-serif;
+	top: 25%
+}
+body {
+	border: 0 solid #fff
+}
+.intro {
+	max-width: 380px;
+	bottom: 35%;
+	font-size: 17px;
+	line-height: 24px;
+	padding-right: 30px
+}
+header {
+	background: url(../img/watercolour-bg.jpg) -700px -200px / cover no-repeat #fff;
+	height: 650px
+}
+li {
+	display: block;
+	text-align: left
+}
+.logo {
+	top: 7%
+}
+ul {
+	bottom: 5%;
+	max-width: 50%
+}
+}
+.folio.think {
+	height: 450px;
+	margin-bottom: 30px
+}
+@media (min-width:300px) {
+.folio.player {
+	padding-bottom: 90%;
+	margin-top: 40px
+}
+.folio.altitude {
+	padding-bottom: 80%
+}
+.folio.snowfire {
+	padding-bottom: 75%;
+	margin-top: 40px
+}
+.folio.mode, .folio.pinterest, .folio.tyle {
+	padding-bottom: 70%
+}
+.folio.variousui {
+	padding-bottom: 65%;
+	margin-top: 40px
+}
+.folio.awesomecart, .folio.bookcreator, .folio.letswatchit, .folio.ooomf, .folio.snow2moro, .folio.think, .folio.tribal, .folio.wavehouse {
+	padding-bottom: 80%;
+	margin-top: 40px
+}
+.folio.email {
+	padding-bottom: 95%;
+	margin-top: 40px
+}
+.folio.oozled {
+	padding-bottom: 80%;
+	margin-top: -40px
+}
+.folio.firstround, .folio.instate, .folio.zain {
+	padding-bottom: 80%;
+	margin-top: 40px
+}
+}
+@media (min-width:440px) {
+.folio.player {
+	padding-bottom: 80%
+}
+.folio.altitude, .folio.mode, .folio.pinterest, .folio.snowfire, .folio.tyle {
+	padding-bottom: 70%
+}
+.folio.variousui {
+	padding-bottom: 60%
+}
+.folio.awesomecart, .folio.bookcreator, .folio.firstround, .folio.instate, .folio.letswatchit, .folio.ooomf, .folio.oozled, .folio.snow2moro, .folio.think, .folio.tribal, .folio.wavehouse, .folio.zain {
+	padding-bottom: 70%
+}
+.folio.email {
+	padding-bottom: 85%
+}
+}
+@media (min-width:901px) {
+.folio.altitude, .folio.awesomecart, .folio.mode, .folio.pinterest, .folio.player, .folio.snowfire, .folio.tribal, .folio.tyle, .folio.variousui {
+	padding: 30px
+}
+.folio.think {
+	padding: 30px;
+	height: 850px
+}
+.folio.bookcreator, .folio.email, .folio.firstround, .folio.instate, .folio.letswatchit, .folio.ooomf, .folio.oozled, .folio.snow2moro, .folio.wavehouse, .folio.zain {
+	padding: 30px
+}
+.btn {
+	margin-top: 30px
+}
+}

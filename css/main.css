@@ -1,0 +1,461 @@
+
+/* GAKU13 main.css */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, button, input, select, textarea {
+	color: #222;
+}
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+audio, canvas, img, video {
+	vertical-align: middle;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	resize: vertical;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Brandon grotesque */
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/Brandon-blk.otf') format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/Brandon-bld.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/Brandon-med.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/Brandon-reg.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/Brandon-light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/Brandon-thin.otf') format('opentype');
+	font-weight: 100;
+	font-style: normal;
+}
+/* common */
+.en {
+	font-family: 'Brandon';
+	font-weight: 400;
+}
+/* body */
+body {
+
+}
+/* wrapper */
+#wrapper {
+	text-align: center;
+}
+header {
+	position: relative;
+	height: 740px;
+}
+.face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 740px;
+	background-image: url('../img/me.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+.box {
+	width: 1060px;
+	height: 370px;
+	margin: 200px auto;
+}
+.title {
+	max-width: 940px;
+	margin: 0 80px 10px auto;
+	padding-top: 120px;
+}
+.title svg {
+	width: 100%;
+	height: auto;
+}
+.path1 {
+	stroke: #333;
+	fill: #fff;
+	stroke-width: 2;
+	stroke-dasharray: 3000;
+	stroke-dashoffset: 3000;
+	animation: dash 2s ease-in forwards;
+}
+.sub-title {
+	margin: 0 0 10px;
+	padding-right: 80px;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: right;
+	opacity: 0;
+	animation: showFade 0.5s ease-in-out 1.0s forwards;
+}
+.block {
+	padding: 0 80px 0 0;
+	font-size: 28px;
+	text-align: right;
+	opacity: 0;
+	animation: showFade 0.5s ease-in-out 1.0s forwards;
+}
+header ul {
+	position: absolute;
+	right: 40px;
+	bottom: 13%;
+	list-style: none;
+	padding-right: 25px;
+	letter-spacing: 1px;
+	text-align: right;
+	opacity: 0;
+	animation: showFade 0.3s ease-in-out 1.3s forwards;
+}
+header li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+header li a {
+	position: relative;
+	display: inline-block;
+	padding: 10px 5px;
+	margin: 0 20px;
+	color: #666;
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Brandon';
+	text-decoration: none;
+	transition: opacity .2s ease-in-out, color .2s;
+}
+header li a:after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: rgba(0, 0, 0, 0.25);
+	transition: opacity 0.3s, transform 0.3s;
+	transform: translateY(5px);
+	opacity: 0;
+}
+li.pinterest a .fa {
+	color: #cb2027;
+}
+li.twitter a .fa {
+	color: #00aced;
+}
+li.googleplus a .fa {
+	color: #dd4b39;
+}
+li.email a .fa {
+	color: #26459a;
+}
+header li a:hover {
+	color: #333;
+}
+header li a:hover:after {
+	opacity: 1;
+	transform: translateY(-5px);
+}
+
+/* dummy h2 */
+h2.top {
+	margin: 0;
+	border-top: 5px solid #f2f2f2;
+}
+/* folio */
+.folio {
+	padding: 60px 20px;
+}
+.folio h2 {
+	margin: 0 0 20px;
+	font-size: 44px;
+	font-weight: 400;
+}
+.excuse {
+	background-color: #5c6bc0;
+}
+.excuse p {
+	padding: 30px 0;
+	line-height: 44px;
+	color: white;
+	font-size: 20px;
+}
+.sample-image {
+	width: 320px;
+	margin: 0 auto;
+}
+
+/* charts */
+.charts-wrap {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.chart-wrap {
+	float: left;
+	position: relative;
+	width: 20%;
+}
+.chart-wrap > div {
+	padding: 0 0 30px;
+}
+.chart-wrap > p {
+	font-size: 20px;
+	font-family: 'Brandon';
+	font-weight: 400;
+	text-align: center;
+}
+.chart-wrap canvas {
+	display: block;
+	width: 100%;
+}
+
+
+/* ================================================================================
+   css3 animations
+   ================================================================================ */
+
+@keyframes showFade75 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.75;
+	}
+}
+@keyframes showFade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes showFromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes showFromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes showFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 3000;
+		fill: #fff;
+	}
+	80% {
+		fill: #fff;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		fill: #333;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+.ir:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+.invisible {
+	visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   media
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	body {
+	}
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a, a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: ' (' attr(href) ')';
+	}
+	abbr[title]:after {
+		content: ' (' attr(title) ')';
+	}
+	.ir a:after, a[href^='javascript:']:after, a[href^='#']:after {
+		content: '';
+	}
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr, img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	@page {
+		margin: 0.5cm;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+}

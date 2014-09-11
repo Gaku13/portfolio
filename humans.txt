@@ -1,0 +1,35 @@
+# humanstxt.org/
+
+/* =========================================== */
+  ________      __
+ |  ____  |     | |
+ | |   _|_| __  | | ____  __
+ | |  |_  |/ _` | |/ /| | | |
+ | |____| | (_| |   ( | \_/ |
+ |________|\__,_|_|\_\ \__,_|13
+
+/* =========================================== */
+
+
+# The humans responsible & technology colophon
+
+	Develop & Main Design: Gaku Hirabayashi
+	Twitter: @Gaku013
+
+
+# TEAM
+
+	It's not quite a team actually...
+	I'm doing this alone alone alone....
+
+
+# THANKS
+
+	Myself and lots of girls in my dream.
+
+
+# TECHNOLOGY COLOPHON
+
+	HTML5, CSS3
+	normalize.css, jQuery, Modernizr
+
